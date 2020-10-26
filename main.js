@@ -28,6 +28,16 @@ function addActive() {
     var addClass = document.getElementsByClassName("hamburger-menu");
     for(var i = 0; i < addClass.length; i++)
     {
-        addClass[i].className += " active";
+        addClass[i].classList.toggle("active");
     }
 }
+
+// document.addEventListener("click", removeActive);
+//
+// function removeActive() {
+//     var removeClass = document.getElementsByClassName("hamburger-menu active");
+//     for(var i = 0; i < removeClass.length; i++)
+//     {
+//         removeClass[i].classList.remove('active');
+//     }
+// }
